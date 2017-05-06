@@ -6,11 +6,7 @@
   "proxies": [
     {
       "path": "/api",
-      "proxyUrl": "http://api.evang.dk/v1"
-    },
-    {
-      "path": "/weather",
-      "proxyUrl": "http://api.openweathermap.org/data/2.5"
+      "proxyUrl": "https://jsonplaceholder.typicode.com"
     }
   ]
 }

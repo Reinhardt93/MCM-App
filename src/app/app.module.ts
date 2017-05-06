@@ -3,9 +3,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
 import { Geolocation } from '@ionic-native/geolocation';
 import { AgmCoreModule} from 'angular2-google-maps/core';
 
@@ -16,11 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    TabsPage,
-    ContactPage,
-    AboutPage
-
+    HomePage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -32,10 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    TabsPage,
-    ContactPage,
-    AboutPage
+    HomePage
   ],
   providers: [
     StatusBar,
