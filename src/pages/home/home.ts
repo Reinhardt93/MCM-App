@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+import { CampaignsPage } from '../campaigns/campaigns';
+import { ShopsPage } from '../shops/shops';
 
 
 @Component({
@@ -14,10 +14,13 @@ export class HomePage {
     this.nav = nav;
   }
   pushShops(){
-    this.nav.push(AboutPage)
+    this.nav.push(ShopsPage)
   }
   pushCampaigns(){
-    this.nav.push(ContactPage)
+    this.nav.push(CampaignsPage)
   }
+  /*pushSettings(){
+    this.nav.push(SettingsPage)
+  }*/
 
 }

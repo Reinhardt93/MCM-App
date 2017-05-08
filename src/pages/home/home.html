@@ -7,7 +7,8 @@
 <ion-content>
   <ion-row class="top-picture">
     <ion-col>
-        <img src="http://placehold.it/450x250" style="width:100%;" (click)="goToPage()"/>
+        <img class="bg-img" src="http://placehold.it/450x250"  (click)="goToPage()"/>
+        <img class="toplogo" src="http://placehold.it/75x75"/>
     </ion-col>
   </ion-row>
   <ion-row class="title">
@@ -21,17 +22,21 @@
     <ion-row>
       <ion-col width-50>
         <img src="http://placehold.it/250x250" (click)="pushShops()">
+        <div class="menu-title">Shops</div>
       </ion-col>
       <ion-col width-50>
         <img src="http://placehold.it/250x250" (click)="pushCampaigns()">
+        <div class="menu-title">Campaigns</div>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col width-50>
-        <img src="http://placehold.it/250x250" (click)="goToPage()">
+        <img src="http://placehold.it/250x250" (click)="pushSettings()">
+        <div class="menu-title">Settings</div>
       </ion-col>
       <ion-col width-50>
         <img src="http://placehold.it/250x250" (click)="goToPage()">
+        <div class="menu-title">Information</div>
       </ion-col>
     </ion-row>
   </ion-row>

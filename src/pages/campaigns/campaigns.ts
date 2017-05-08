@@ -6,10 +6,10 @@ import { Campaigns } from '../../models/campaigns';
 
 
 @Component({
-  selector: 'page-contact',
-  templateUrl: 'contact.html'
+  selector: 'page-campaigns',
+  templateUrl: 'campaigns.html'
 })
-export class ContactPage {
+export class CampaignsPage {
 
   public campaigns:Array<Campaigns> = new Array<Campaigns>();
 

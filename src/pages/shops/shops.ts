@@ -6,10 +6,10 @@ import { Shops } from '../../models/shops';
 
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-shops',
+  templateUrl: 'shops.html'
 })
-export class AboutPage {
+export class ShopsPage {
 
   public shops:Array<Shops> = new Array<Shops>();
 

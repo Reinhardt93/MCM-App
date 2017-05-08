@@ -4,9 +4,9 @@ import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-
+import { CampaignsPage } from '../pages/campaigns/campaigns';
+import { ShopsPage } from '../pages/shops/shops';
+//import { SettingsPage } from '../pages/settings/settings;
 import { Geolocation } from '@ionic-native/geolocation';
 import { AgmCoreModule} from 'angular2-google-maps/core';
 
@@ -20,8 +20,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    AboutPage,
-    ContactPage
+    CampaignsPage,
+    ShopsPage
+    //SettingsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -34,8 +35,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    AboutPage,
-    ContactPage
+    CampaignsPage,
+    ShopsPage
+    //SettingsPage
   ],
   providers: [
     StatusBar,

@@ -1,5 +1,35 @@
 page-home {
         .title{
             text-align: center;
+            
+            h3{
+                font-size: 2.0em;
+            }
+            p{
+                font-size: 1.30em;
+            }
+        }
+        .tiles {
+            position: relative;
+            text-align: center;
+        }
+        .menu-title {
+            position: absolute;
+            top: 72%;
+            font-size: 1.5em;
+            width: 100%;
+            font-weight: bold;
+            color: #fff;
+        }
+        .bg-img{
+            
+        }
+        .toplogo {
+            display: block;
+            //position: absolute;
+            margin-left:auto;
+            margin-right:auto;
+            top: 30%;
+
         }
 }
