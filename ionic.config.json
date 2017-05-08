@@ -6,7 +6,7 @@
   "proxies": [
     {
       "path": "/api",
-      "proxyUrl": "https://jsonplaceholder.typicode.com"
+      "proxyUrl": "http://46.101.238.126/"
     }
   ]
 }

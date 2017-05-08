@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Tilbud</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="top-picture">
+    <ion-col>
+        <img src="http://placehold.it/450x250" style="width:100%;" (click)="consoleLogData()"/>
+    </ion-col>
+  </ion-row>
+  <ion-row class="title">
+    <ion-col padding>
+      <h3>Tilbud</h3>
+      <hr>
+    </ion-col>
+  </ion-row>
+  <ion-row class="tiles">
+    <ion-row *ngFor="let item of campaigns">
+      <ion-col width-50>
+        <img src= {{item.image}} (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+  </ion-row>  
+
+    <!--
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+      <ion-col width-50>
+        <img src="http://placehold.it/250x250" (click)="goToPage()">
+      </ion-col>
+    </ion-row>
+  </ion-row>
+-->
+</ion-content>
