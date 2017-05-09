@@ -17,7 +17,7 @@ export class ShopsPage {
 
   constructor(public navCtrl: NavController, public http:Http, private alertCtrl: AlertController, private toastCtrl: ToastController, public geolocation: Geolocation) {
 
-    http.get("api/shops?api_token=b01ed70c6acc013d8b87986a27c0c52ff329a76e")
+    http.get("api/shops")
     .subscribe(
        //data => console.log(data.json().result) //this.test = data.json().result
        data => this.shops = data.json().result
@@ -32,12 +32,14 @@ export class ShopsPage {
 
   alertTest(storeName)
   {
-    this.alertOpen = true;
-    let trump = this.alertCtrl.create({
-      title: storeName,
-      message: '<sebm-google-map> </sebm-google-map>'
-    });
-  trump.present();
+    console.log(this.shops);
+
+  //   this.alertOpen = true;
+  //   let trump = this.alertCtrl.create({
+  //     title: storeName,
+  //     message: '<sebm-google-map> </sebm-google-map>'
+  //   });
+  // trump.present();
   }
 
 }

@@ -20,13 +20,13 @@
   <ion-row class="shops">
 
     <ion-card *ngFor="let item of shops">
-      <img src="http://placehold.it/450x250" (click)="alertTest( item.storeName )"/>
-      <div class="card-title">{{ item.storeName }}</div>
+      <img src="http://placehold.it/450x250" (click)="alertTest( item.shopName )"/>
+      <div class="card-title">{{ item.shopName }}</div>
       <div class="card-subtitle">Åbent idag fra 10-17.00</div>
     </ion-card>
 
     <ion-card>
-      <img src="http://placehold.it/450x250" (click)="getData()"/>
+      <img src="http://placehold.it/450x250" (click)="alertTest()"/>
       <div class="card-title">PROFIL OPTIK</div>
       <div class="card-subtitle">Åbent idag fra 10-17.00</div>
     </ion-card>
