@@ -21,8 +21,8 @@
 
     <ion-card *ngFor="let item of shops">
       <img src="http://placehold.it/450x250" (click)="alertTest( item.shopName )"/>
-      <div class="card-title">{{ item.shopName }}</div>
-      <div class="card-subtitle">Åbent idag fra 10-17.00</div>
+      <div class="card-title">{{ item.shopName }} </div>
+      <div class="card-subtitle">Åbent idag fra {{ item.openingHours }}</div>
     </ion-card>
 
     <ion-card>
