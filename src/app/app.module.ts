@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CampaignsPage } from '../pages/campaigns/campaigns';
 import { ShopsPage } from '../pages/shops/shops';
+import { InformationPage } from '../pages/information/information';
 //import { SettingsPage } from '../pages/settings/settings;
 import { Geolocation } from '@ionic-native/geolocation';
 import { AgmCoreModule} from 'angular2-google-maps/core';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     CampaignsPage,
-    ShopsPage
+    ShopsPage,
+    InformationPage
     //SettingsPage
   ],
   imports: [
@@ -36,7 +38,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     CampaignsPage,
-    ShopsPage
+    ShopsPage,
+    InformationPage
     //SettingsPage
   ],
   providers: [
