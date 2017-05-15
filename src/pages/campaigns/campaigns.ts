@@ -18,7 +18,6 @@ export class CampaignsPage {
 
     http.get("api/campaigns")
     .subscribe(
-       //data => console.log(data.json().result) //this.test = data.json().result
        data => this.campaigns = data.json().result
      );
   }
