@@ -16,7 +16,7 @@ export class CampaignsPage {
   constructor(public navCtrl: NavController, public http:Http) {
 
 
-    http.get("api/campaigns")
+    http.get("api/campaigns/active")
     .subscribe(
        data => this.campaigns = data.json().result
      );
