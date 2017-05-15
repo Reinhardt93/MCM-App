@@ -8,12 +8,14 @@
   <ion-row>
     <ion-col>
       <ion-card>
-        <p>RO's Torv ligger i Roskilde og er et unikt shoppingcenter med fokus på design, kunst og arkitektur. De lyse og smukke omgivelser skaber en stemning og stil, som gør det til en særlig oplevelse at besøge centret.
-RO’s Torv blev opført i 2003, men i 2006 blev det dog klart, at en udbygning var nødvendig. Derfor kunne man i 2009 præsentere et udbygget RO’s Torv, der var næsten dobbelt så stort som det oprindelige med i alt 47.000 m2.
-
-RO’s Torv byder både på mange gode shoppingoplevelser i de 60 spændende specialbutikker og på skønne brunches, frokoster eller middage på en af de 10 lækre og hyggelige cafeer og restauranter. Herudover kan du også gå i biografen, træne i fitnesscenter, blive klippet, sætte din bolig til salg, handle dine dagligvarer og meget mere.
-
-Vi glæder os til at byde dig velkommen!
+        <ion-row>
+          <ion-col class="top-image">
+            <img src="http://placehold.it/450x250" style="width:100%;" (click)="goToPage()"/>
+          </ion-col>
+        </ion-row>
+        <h2>Velkommen til Ro´s Torv</h2>
+        <p>RO's Torv ligger i Roskilde og er et unikt shoppingcenter med fokus på design, kunst og arkitektur. De lyse og smukke omgivelser skaber en stemning og stil, som gør det til en særlig oplevelse at besøge centret.<br><br>
+        Her under kan man finde general information omkring centeret og dets funktioner
         </p>
       </ion-card>
     </ion-col>
@@ -22,83 +24,83 @@ Vi glæder os til at byde dig velkommen!
     <ion-col>
       <ion-card (click)="pushParking()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/bil.png?etag=W%2F%2280c6-5854faf7%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>I vores parkeringshus har vi over 1.100 p-pladser, hvor du kan parkere så længe du vil - de 2 første timer er gratis. </p>
+        <h2>parkering</h2>
       </ion-card>
     </ion-col>
     <ion-col>
-      <ion-card>
+      <ion-card (click)="pushBaby()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/sut.png?etag=W%2F%225fc8-5854fb59%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>I vores Baby Lounge på 1. sal kan du i fred og ro amme og pusle dit barn - og der er legehjørne til de ældre søskende. </p>
+        <h2>Baby lounge</h2>
       </ion-card>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col width-50>
-      <ion-card>
+      <ion-card (click)="pushArt()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/maling.png?etag=W%2F%229df1-5854fb3e%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>RO's Torv har fokus på kunst. Mens du shopper kan du nyde de mange unikke værker, der er skabt specifikt til RO's Torv. </p>
+        <h2>Kunst</h2>
       </ion-card>
     </ion-col>
     <ion-col width-50>
-      <ion-card>
+      <ion-card (click)="pushWifi()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/wifi.png?etag=W%2F%226f39-5854ee49%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>På RO's Torv har du mulighed for at benytte dig af vores fri Wi-Fi. Du kan bruge det på Torvet og på gangene.</p>
+        <h2>Wifi</h2>
       </ion-card>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col width-50>
-      <ion-card>
+      <ion-card (click)="pushToilet()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/toilet.png?etag=W%2F%226440-5854fbe3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>Toiletterne er placeret ved Trappe Øst (på 1. sal), ved Trappe Vest (i kælderniveau -1) og på 1. sal ved Kino.</p>
+        <h2>Toilet</h2>
       </ion-card>
     </ion-col>
     <ion-col width-50>
-      <ion-card>
+      <ion-card (click)="pushHandicap()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/korestol.png?etag=W%2F%226bc6-5854fbcb%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>På RO's Torv har vi handicaptoiletter, 14 handicapppladser samt mulighed for at låne vores kørestol.</p>
+        <h2>Handicap</h2>
       </ion-card>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col>
-      <ion-card>
+      <ion-card (click)="pushSmoking()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/rogfri.png?etag=W%2F%22bb0b-5854fd21%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>Rygning er ikke tilladt inde i centret - kun helt udenfor, hvor der også er opstillet kummer som askebægre.</p>
+        <h2>Rygning</h2>
       </ion-card>
     </ion-col>
     <ion-col>
-      <ion-card>
+      <ion-card (click)="pushPrivate()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/dokument.png?etag=W%2F%223249-5854fd74%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>Hele RO's Torv er privat område. Det er derfor ikke tilladt at hænge materiale op nogen steder i centret eller i p-huset. </p>
+        <h2>Tilladelser</h2>
       </ion-card>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col>
-      <ion-card>
+      <ion-card (click)="pushRules()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/udrabstegn.png?etag=W%2F%22246b-5854fd94%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>Af hensyn til centrets kunder er der, i samarbejde med politiet og Roskilde Byråd, opstillet en række ordensregler. </p>
+        <h2>regler</h2>
       </ion-card>
     </ion-col>
     <ion-col>
-      <ion-card>
+      <ion-card (click)="pushGuard()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/betjent.png?etag=W%2F%22643c-5854ff1c%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>På RO's Torv er der lagt stor vægt på, at vores kunder kan føle sig trygge - det hjælper vores vagter med hver dag.</p>
+        <h2>sikkerhed</h2>
       </ion-card>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col>
-      <ion-card>
+      <ion-card (click)="pushReturn()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/returret.png?etag=W%2F%227b0b-5854ff76%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>Mange af RO's Torvs butikker tilbyder, at deres kunder kan komme tilbage med en købt vare.</p>
+        <h2>returret</h2>
       </ion-card>
     </ion-col>
     <ion-col>
-      <ion-card>
+      <ion-card (click)="pushContest()">
         <img src="http://rostorv.dk/____impro/1/onewebmedia/gave.png?etag=W%2F%227234-58550076%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=100%2B50">
-        <p>På RO's Torvs facebookside har vi løbende forskellige konkurrencer, regler gælder</p>
+        <h2>konkurrence</h2>
       </ion-card>
     </ion-col>
   </ion-row>
