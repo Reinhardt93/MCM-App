@@ -12,34 +12,40 @@ import { Shops } from '../../models/shops';
 export class ShopsPage {
 
   public shops:Array<Shops> = new Array<Shops>();
+  //items:Array<string> = new Array<string>();
+  items:Array<Shops> = new Array<Shops>();
+  searchQuery: string = '';
 
-  public alertOpen:boolean = false;
 
   constructor(public navCtrl: NavController, public http:Http, private alertCtrl: AlertController, private toastCtrl: ToastController, public geolocation: Geolocation) {
-
     http.get("api/shops")
     .subscribe(
-       //data => console.log(data.json().result) //this.test = data.json().result
-       data => this.shops = data.json().result
-     );
-
+       data => {
+        this.shops = data.json().result;
+        this.initializeItems();
+    });
   }
 
-  getData(){
-    console.log(this.shops)
+  initializeItems() {
+    this.items = this.shops;
+  }
+
+  getItems(ev: any) {
+    // Reset items back to all of the items
+    this.initializeItems();
+
+    // set val to the value of the searchbar
+    let val = ev.target.value;
+
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.items = this.items.filter((item) => {
+        return (item.shopName.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }
   }
 
 
-  alertTest(storeName)
-  {
-    console.log(this.shops);
 
-  //   this.alertOpen = true;
-  //   let trump = this.alertCtrl.create({
-  //     title: storeName,
-  //     message: '<sebm-google-map> </sebm-google-map>'
-  //   });
-  // trump.present();
-  }
 
 }
