@@ -1,5 +1,5 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler, PopoverController } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
@@ -10,6 +10,11 @@ import { SettingsPage } from '../pages/settings/settings';
 import { ShopsPage } from '../pages/shops/shops';
 // Subpages for ShopsPage
 import { ProfiloptikPage } from '../pages/shops/subpages/profiloptik/profiloptik';
+import { GlitterPage } from '../pages/shops/subpages/glitter/glitter';
+import { MullersPage } from '../pages/shops/subpages/mullers/mullers';
+import { NeyePage } from '../pages/shops/subpages/neye/neye';
+import { PilgrimPage } from '../pages/shops/subpages/pilgrim/pilgrim';
+import { ThielePage } from '../pages/shops/subpages/thiele/thiele';
 
 
 import { InformationPage } from '../pages/information/information';
@@ -56,7 +61,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GuardPage,
     ReturnPage,
     ContestPage,
-    SettingsPage
+    SettingsPage,
+    GlitterPage,
+    MullersPage,
+    NeyePage,
+    PilgrimPage,
+    ThielePage
+
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -85,7 +96,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GuardPage,
     ReturnPage,
     ContestPage,
-    SettingsPage
+    SettingsPage,
+    GlitterPage,
+    MullersPage,
+    NeyePage,
+    PilgrimPage,
+    ThielePage
   ],
   providers: [
     StatusBar,

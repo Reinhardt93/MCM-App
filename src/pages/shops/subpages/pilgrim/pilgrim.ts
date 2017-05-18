@@ -6,10 +6,10 @@ import { Geolocation } from '@ionic-native/geolocation';
 
 
 @Component({
-  selector: 'page-profiloptik',
-  templateUrl: 'profiloptik.html'
+  selector: 'page-pilgrim',
+  templateUrl: 'pilgrim.html'
 })
-export class ProfiloptikPage {
+export class PilgrimPage {
 
   constructor(public geolocation: Geolocation) {
   }
