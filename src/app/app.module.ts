@@ -1,12 +1,16 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler, PopoverController } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { CampaignsPage } from '../pages/campaigns/campaigns';
+import { SettingsPage } from '../pages/settings/settings';
+
 import { ShopsPage } from '../pages/shops/shops';
-//import { SettingsPage } from '../pages/settings/settings;
+// Subpages for ShopsPage
+import { ProfiloptikPage } from '../pages/shops/subpages/profiloptik/profiloptik';
+
 
 import { InformationPage } from '../pages/information/information';
 // Subpages for InformationPage
@@ -38,6 +42,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     CampaignsPage,
     ShopsPage,
+    ProfiloptikPage,
     InformationPage,
     ParkingPage,
     BabyPage,
@@ -50,8 +55,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RulesPage,
     GuardPage,
     ReturnPage,
-    ContestPage
-    //SettingsPage
+    ContestPage,
+    SettingsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -66,6 +71,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     CampaignsPage,
     ShopsPage,
+    ProfiloptikPage,
     InformationPage,
     ParkingPage,
     BabyPage,
@@ -78,8 +84,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RulesPage,
     GuardPage,
     ReturnPage,
-    ContestPage
-    //SettingsPage
+    ContestPage,
+    SettingsPage
   ],
   providers: [
     StatusBar,

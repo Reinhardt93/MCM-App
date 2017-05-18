@@ -1,0 +1,32 @@
+.popover-content {
+  position: relative;
+  top: 0px !important;
+  left: -10px !important;
+  width: 280px !important;
+}
+
+page-profiloptik {
+  .popup-container {
+    margin: 10px;
+  }
+
+  .popup-title {
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .popup-hr {
+    border-top: 1px solid #b0b1b2;
+    margin-bottom: 15px;
+  }
+
+  .popup-description {
+    margin-bottom: 10px;
+  }
+
+  .popup-opening-hours {
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
+}

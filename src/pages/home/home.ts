@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { CampaignsPage } from '../campaigns/campaigns';
 import { ShopsPage } from '../shops/shops';
 import { InformationPage } from '../information/information';
+import { SettingsPage } from '../settings/settings';
 
 
 @Component({
@@ -11,20 +12,23 @@ import { InformationPage } from '../information/information';
 })
 export class HomePage {
 
+  classesMapping = {
+    'ShopsPage': ShopsPage,
+    'CampaignsPage': CampaignsPage,
+    'InformationPage': InformationPage,
+    'SettingsPage': SettingsPage
+  }
+
   constructor(public nav: NavController) {
     this.nav = nav;
   }
-  pushShops(){
-    this.nav.push(ShopsPage)
+
+  valueToObject(value) {
+    return this.classesMapping[value];
   }
-  pushCampaigns(){
-    this.nav.push(CampaignsPage)
+  goToPage(page) {
+    let value = this.valueToObject(page);
+    this.nav.push(value);
   }
-  pushInformation(){
-    this.nav.push(InformationPage)
-  }
-  /*pushSettings(){
-    this.nav.push(SettingsPage)
-  }*/
 
 }

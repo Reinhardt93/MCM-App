@@ -8,6 +8,7 @@ export class Shops
     phoneNumber: number;
     openingHours: string;
     shopImage: string;
+    ShopsPage: string;
     created_at: string;
     updated_at: string;
 }
