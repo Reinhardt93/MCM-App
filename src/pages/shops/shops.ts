@@ -10,7 +10,11 @@ import { ModalController } from 'ionic-angular';
 import { Shops } from '../../models/shops';
 
 import { ProfiloptikPage } from './subpages/profiloptik/profiloptik';
-//import { ThielePage } from './subpages/thiele/thiele';
+import { ThielePage } from './subpages/thiele/thiele';
+import { PilgrimPage } from './subpages/pilgrim/pilgrim';
+import { NeyePage } from './subpages/neye/neye';
+import { MullersPage } from './subpages/mullers/mullers';
+import { GlitterPage } from './subpages/glitter/glitter';
 
 @Component({
   selector: 'page-shops',
@@ -24,8 +28,12 @@ export class ShopsPage {
   searchQuery: string = '';
 
   classesMapping = {
-    'ProfiloptikPage': ProfiloptikPage
-    //'ThielePage': Thielepage
+    'ProfiloptikPage': ProfiloptikPage,
+    'ThielePage': ThielePage,
+    'PilgrimPage': PilgrimPage,
+    'NeyePage':NeyePage,
+    'MullersPage':MullersPage,
+    'GlitterPage':GlitterPage
   };
 
   constructor(public navCtrl: NavController, public popoverCtrl: PopoverController, public modalCtrl: ModalController, public http:Http, private alertCtrl: AlertController, private toastCtrl: ToastController, public geolocation: Geolocation) {

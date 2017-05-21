@@ -3,7 +3,6 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
 import { Settings } from '../../models/settings';
-import { HomePage } from '../home/home';
 
 
 @Component({
