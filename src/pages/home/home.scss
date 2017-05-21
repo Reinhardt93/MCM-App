@@ -13,19 +13,31 @@ page-home {
         .top-image {
           padding:0px !important;
           margin-bottom: -70px !important;
+          width: 100px;
         }
 
         .tiles {
             position: relative;
             text-align: center;
         }
+        ion-card {
+            width: calc(100% - 7px) !important;
+        }
+        .menu-image {
+            margin-bottom: -40px;
+            width: 100%;
+        }
         .menu-title {
             position: absolute;
-            top: 72%;
-            font-size: 1.2em;
+            top: 77%;
             width: 100%;
+            margin-left: -10px;
+        }
+        .menu-title p {
+            font-size: 1.2em;
             font-weight: bold;
             text-transform: uppercase;
+            text-align:center !important;
         }
         .toplogo {
             display: block;
@@ -35,7 +47,5 @@ page-home {
             top: -125px;
             padding-bottom: -50px;
         }
-        ion-col {
-            
-        }
+
 }
