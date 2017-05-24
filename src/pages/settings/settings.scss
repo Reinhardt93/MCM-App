@@ -1,15 +1,8 @@
-.ios, .md {
+settings-page {
+  .admin_button {
+    vertical-align: bottom;
+    position: relative;
+    background-color: red;
+  }
 
-    settings-page {
-
-      .scroll {
-        height: 100%
-      }
-
-      #map {
-        width: 100%;
-        height: 100%;
-      }
-
-    }
 }
