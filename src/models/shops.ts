@@ -5,6 +5,7 @@ export class Shops
     }
     shopID: number;
     shopName: string;
+    description: string;
     phoneNumber: number;
     openingHours: string;
     shopImage: string;

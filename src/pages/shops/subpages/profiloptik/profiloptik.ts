@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-//import { NavController } from 'ionic-angular';
-//import { ViewChild, ElementRef } from '@angular/core';
+import { Http } from '@angular/http';
 import { Geolocation } from '@ionic-native/geolocation';
-//import { PopoverController, NavParams } from 'ionic-angular';
+
+import { Shops } from '../../../../models/shops';
+
 
 
 @Component({
@@ -11,6 +12,13 @@ import { Geolocation } from '@ionic-native/geolocation';
 })
 export class ProfiloptikPage {
 
-  constructor(public geolocation: Geolocation) {
+  public shops:Array<Shops> = new Array<Shops>();
+  constructor(public geolocation: Geolocation, public http:Http)
+  {
+    http.get("api/shops")
+    .subscribe(
+       data => {
+        this.shops = data.json().result;
+    });
   }
 }

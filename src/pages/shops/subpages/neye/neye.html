@@ -1,8 +1,10 @@
-<div class="popup-container">
-  <div class="popup-title">Profil Optik</div>
-  <hr class="popup-hr">
-  <div class="popup-description">Profil optik er en butik</div>
-  <div class="popup-opening-hours">10:00 - 19:00</div>
-  <sebm-google-map>
-  </sebm-google-map>
+<div class="pop-container" *ngFor="let item of shops">
+  <div *ngIf="item.ShopsPage == 'NeyePage'">
+    <div class="popup-title"> {{item.shopName}} </div>
+    <hr class="popup-hr">
+    <div class="popup-description"> {{item.description}} </div>
+    <div class="pop-opening-hours"> {{item.openingHours}} </div>
+    <sebm-google-map>
+    </sebm-google-map>
+  </div>
 </div>
