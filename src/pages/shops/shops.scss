@@ -13,8 +13,16 @@ page-shops {
         width: 100%;
         font-weight: bold;
         text-transform:uppercase;
-        color: #fff;
-        }
+        color: black;
+    }
+
+    .searchbar {
+      margin-top: -5px !important;
+    }
+
+    .overlay {
+      opacity: 0.40;
+    }
 
 
     .card-subtitle {
@@ -22,7 +30,7 @@ page-shops {
         position: absolute;
         top: 52%;
         width: 100%;
-        color: #fff;
+        color: black;
         }
 
     .top-image {

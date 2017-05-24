@@ -7,23 +7,18 @@
 <ion-content>
   <ion-row>
     <ion-col class="top-image">
-        <img src="http://placehold.it/450x250" style="width:100%;" (click)="goToPage()"/>
-        <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+        <img src="../../assets/img/shops.jpg" style="width:100%;" (click)="goToPage()"/>
+        <ion-searchbar class="searchbar" (ionInput)="getItems($event)"></ion-searchbar>
 
     </ion-col>
   </ion-row>
 
-  <ion-row class="title">
-    <ion-col padding>
-      <h3>Butikker</h3>
-      <hr>
-    </ion-col>
-  </ion-row>
+
   <ion-row class="shops">
 
     <div *ngFor="let item of items">
     <ion-card (click)="presentPopover(item.ShopsPage)">
-      <img src="http://placehold.it/450x250"/>
+      <img class="overlay" src="../../assets/img/{{item.shopImage}}"/>
       <div class="card-title">{{ item.shopName }} </div>
       <div class="card-subtitle">Åbent idag fra {{ item.openingHours }}</div>
     </ion-card>
