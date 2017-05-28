@@ -33,7 +33,7 @@ import { ReturnPage } from '../pages/information/subpages/return/return';
 import { ContestPage } from '../pages/information/subpages/contest/contest';
 
 import { Geolocation } from '@ionic-native/geolocation';
-import { AgmCoreModule} from 'angular2-google-maps/core';
+import { AgmCoreModule, SebmGoogleMapMarker} from 'angular2-google-maps/core';
 
 
 import { StatusBar } from '@ionic-native/status-bar';

@@ -3,8 +3,11 @@
     <div class="popup-title"> {{item.shopName}} </div>
     <hr class="popup-hr">
     <div class="popup-description"> {{item.description}} </div>
-    <div class="pop-opening-hours"> {{item.openingHours}} </div>
-    <sebm-google-map>
+    <div class="pop-opening-hours"> Åbningstider: {{item.openingHours}} </div>
+    <br>
+    <sebm-google-map [latitude]="55.641755" [longitude]="12.100550" [zoom]="17">
+      <sebm-google-map-marker [latitude]="55.641755" [longitude]="12.100550">
+      </sebm-google-map-marker>
     </sebm-google-map>
   </div>
 </div>

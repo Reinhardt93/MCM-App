@@ -3,8 +3,6 @@ import { NavController, AlertController, ToastController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import { Geolocation } from '@ionic-native/geolocation';
 import { PopoverController } from 'ionic-angular';
-import { ModalController } from 'ionic-angular';
-
 
 
 import { Shops } from '../../models/shops';
@@ -23,7 +21,6 @@ import { GlitterPage } from './subpages/glitter/glitter';
 export class ShopsPage {
 
   public shops:Array<Shops> = new Array<Shops>();
-  //items:Array<string> = new Array<string>();
   items:Array<Shops> = new Array<Shops>();
   searchQuery: string = '';
 
@@ -36,7 +33,7 @@ export class ShopsPage {
     'GlitterPage':GlitterPage
   };
 
-  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController, public modalCtrl: ModalController, public http:Http, private alertCtrl: AlertController, private toastCtrl: ToastController, public geolocation: Geolocation) {
+  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController, public http:Http, private alertCtrl: AlertController, private toastCtrl: ToastController, public geolocation: Geolocation) {
     http.get("api/shops")
     .subscribe(
        data => {
@@ -45,18 +42,12 @@ export class ShopsPage {
     });
   }
 
-  // presentModal() {
-  //   let modal = this.modalCtrl.create(ProfiloptikPage);
-  //   modal.present();
-  //   console.log("It happened!");
-  // }
 
   valueToObject(value) {
     return this.classesMapping[value];
   }
 
   presentPopover(page) {
-    //console.log(ProfiloptikPage);
     let value = this.valueToObject(page);
     let popover = this.popoverCtrl.create(value);
     popover.present();
