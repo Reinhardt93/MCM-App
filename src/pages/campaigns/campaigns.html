@@ -17,8 +17,10 @@
     </ion-col>
   </ion-row>
   <ion-row class="tiles">
-    <ion-col width-50 *ngFor="let item of campaigns">
-        <img src= {{item.image}} (click)="goToPage()">
-    </ion-col>
+    <div class="campaigns" *ngFor="let item of campaigns">
+        <img class="campaigns" src="http://207.154.254.173/img/{{item.image}}">
+        <p class="title"> {{item.title}} </p>
+        <p class="description"> {{item.description}} </p>
+    </div>
   </ion-row>
 </ion-content>
